@@ -36,6 +36,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.status = new System.Windows.Forms.Label();
             this.testbox = new System.Windows.Forms.TextBox();
+            this.newTextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +63,7 @@
             // progressBar
             // 
             this.progressBar.AccessibleName = "imay";
-            this.progressBar.Location = new System.Drawing.Point(36, 286);
+            this.progressBar.Location = new System.Drawing.Point(36, 235);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(100, 23);
             this.progressBar.TabIndex = 2;
@@ -84,7 +85,7 @@
             // status
             // 
             this.status.AutoSize = true;
-            this.status.Location = new System.Drawing.Point(256, 286);
+            this.status.Location = new System.Drawing.Point(164, 245);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(35, 13);
             this.status.TabIndex = 4;
@@ -98,12 +99,23 @@
             this.testbox.Size = new System.Drawing.Size(665, 92);
             this.testbox.TabIndex = 5;
             // 
+            // newTextButton
+            // 
+            this.newTextButton.Location = new System.Drawing.Point(242, 234);
+            this.newTextButton.Name = "newTextButton";
+            this.newTextButton.Size = new System.Drawing.Size(75, 23);
+            this.newTextButton.TabIndex = 6;
+            this.newTextButton.Text = "New next";
+            this.newTextButton.UseVisualStyleBackColor = true;
+            this.newTextButton.Click += new System.EventHandler(this.NewTextButton_Click);
+            // 
             // Form1
             // 
             this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.newTextButton);
             this.Controls.Add(this.testbox);
             this.Controls.Add(this.status);
             this.Controls.Add(this.typingText);
@@ -126,6 +138,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label status;
         private System.Windows.Forms.TextBox testbox;
+        private System.Windows.Forms.Button newTextButton;
     }
 }
 
