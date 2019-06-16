@@ -45,7 +45,8 @@ namespace TypeRacing
                 //progressBar.Value = 50;
                 progressBar.Value = (int)(((double)typingText.TextLength / TextToType.Text.Length) * 100);
                 //progressBar.Value = Convert.ToInt32((350d/500) * 100);
-                status.Text = "Correct" + ((typingText.TextLength ) + " " +  (TextToType.Text.Length));
+                status.Text = "Correct" + ((typingText.TextLength ) + " " +  (TextToType.Text.Length)) ;
+                // add char per minute
             }
             else
             {
