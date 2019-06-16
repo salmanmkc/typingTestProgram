@@ -30,7 +30,9 @@ namespace TypeRacing
             testbox.Text = TextToType.Text.Substring(0,typingText.TextLength);
             if (typingText.Text == (TextToType.Text.Substring(0, typingText.TextLength)))
             {
-                progressBar.Value = (int)(typingText.TextLength / TextToType.Text.Length) * 100;
+                //progressBar.Value = 50;
+                progressBar.Value = (int)(((double)typingText.TextLength / TextToType.Text.Length) * 100);
+                //progressBar.Value = Convert.ToInt32((350d/500) * 100);
                 status.Text = "Correct" + ((typingText.TextLength ) + " " +  (TextToType.Text.Length));
             }
             else
